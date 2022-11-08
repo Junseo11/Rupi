@@ -354,6 +354,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Paid/Snowy Cliff Materials Pack/Demo/SnowyCliffMaterialSwitch.cs"
 "Assets/Resources/UsrLog.cs"
+"Assets/Scenes/scriot/fllowPlayer.cs"
 -langversion:9.0
 
 /deterministic
