@@ -10,6 +10,8 @@ public class playerCtrl : MonoBehaviour
     public float mouseSpeed= 3.0f;      // 마우스 민감도
     float rotationX;                    // 좌우 시점
     float rotationY;                    // 위아래 시점
+    
+
 
 
 
@@ -20,6 +22,8 @@ public class playerCtrl : MonoBehaviour
 
     void Update()
     {
+
+    
         PlayerMove();
         MouseLook();
 
@@ -55,5 +59,27 @@ public class playerCtrl : MonoBehaviour
     // void OnGUI(){
 
     // }
+
+    void OnTriggerStay(Collider other){  //오두막에 플레이어가 충돌하는동안 
+        if(other.gameObject.tag=="Map"){
+         
+            MonsterMove.isSafe=true; //몬스터 무브.cs의 issafe를 true로 변경
+        }
+        else{
+            Debug.Log("out");
+            
+        }
+       
+    }
+
+    void OnTriggerExit(Collider other){ //오두막에서 나가면 issafe false
+        if(other.gameObject.tag=="Map"){
+            MonsterMove.isSafe=false;
+
+    }
+    }
+        
+
+    
 
 }
