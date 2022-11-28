@@ -6,26 +6,32 @@ public class playerCtrl : MonoBehaviour
 {
     public float playerSpeed = 10.0f;   // 플레이어 이동속도
 
-    CharacterController character;      // 마우스로 캐릭터 컨트롤???? 아닌듯
     public float mouseSpeed= 3.0f;      // 마우스 민감도
     float rotationX;                    // 좌우 시점
     float rotationY;                    // 위아래 시점
+
+    public Transform gun;
 
 
 
     void Start()
     {
-        character = this.GetComponent<CharacterController>();   //?
+        Cursor.lockState = CursorLockMode.Locked;
     }
-
+    Vector3 pos =new Vector3(0, 0, 0);
     void Update()
     {
         PlayerMove();
         MouseLook();
 
-        //? 업데이트에 넣는 이유는? 마우스커서 중앙좌표에 고정, 커서 안보임
-        Cursor.lockState = CursorLockMode.Locked;
-        
+        // gun.localEulerAngles = Vector3.Lerp(gun.localEulerAngles, pos, 1f*Time.deltaTime);
+        // if(Input.GetMouseButton(1)){
+        //     pos = new Vector3(0,0,0);
+        // }
+        // else{
+        //     pos = new Vector3(0,0,-30);
+        // }
+            
     }
 
 
@@ -52,8 +58,5 @@ public class playerCtrl : MonoBehaviour
         Camera.main.transform.localEulerAngles = new Vector3(-rotationY, 0, 0);
     }
 
-    // void OnGUI(){
-
-    // }
-
+    
 }
