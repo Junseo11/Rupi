@@ -357,7 +357,6 @@
 "Assets/Resources/UsrLog.cs"
 "Assets/Script/MonsterMove.cs"
 "Assets/Script/MosnterAnimator.cs"
-"Assets/Script/playerCtrl.cs"
 -langversion:9.0
 
 /deterministic
