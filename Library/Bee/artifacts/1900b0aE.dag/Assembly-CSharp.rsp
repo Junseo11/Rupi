@@ -395,6 +395,7 @@
 "Assets/99. Asset/#NVJOB Slender/Slender/Animations/animation.cs"
 "Assets/Paid/Snowy Cliff Materials Pack/Demo/SnowyCliffMaterialSwitch.cs"
 "Assets/Resources/UsrLog.cs"
+"Assets/Script/bulletCtrl.cs"
 "Assets/Script/MonsterMove.cs"
 "Assets/Script/MosnterAnimator.cs"
 "Assets/Script/playerCtrl.cs"
