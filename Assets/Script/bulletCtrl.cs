@@ -18,6 +18,8 @@ public class bulletCtrl : MonoBehaviour
 
     // 물체에 부딪히면 총알 제거
     void OnCollisionEnter(Collision coll) {
+        
         Destroy(this.gameObject);
+
     }
 }
